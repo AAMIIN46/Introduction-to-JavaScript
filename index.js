@@ -1,15 +1,21 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up!🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
-
+//  WAAN IS DIIRIYAY
 /*
 Task 1 - Voting Age
 
 Do the following:   
    1. Make a variable called votingAge and give it a value
    2. Return true if age is 18 or higher
-
+   
 */
-
-
+let votingAge = 19;
+if (votingAge >= 18) {
+  document.getElementById("app").innerHTML = "ture  waad kaweyntahy 18 welcome";
+  console.log("ture  waad kaweyntahy 18 welcome");
+} else {
+  document.getElementById("app").innerHTML = "you're young to view this site";
+  console.log("you're young to view this site");
+}
 
 /*
 Task 2 - Values
@@ -20,9 +26,18 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
-
-
-
+nameka = "JAAMAC";
+lastName = "ABDI";
+if (nameka == "JAAMAC" && lastName == "ABDI") {
+  nameka = "USTAAD DURAAN";
+  lastName = "ALI";
+  document.getElementById("app1").innerHTML = `WELCOME ${nameka}`;
+  console.log(`welcome ${nameka}`);
+  document.getElementById("app2").innerHTML = lastName;
+  console.log(lastName);
+} else {
+  console.log("nooope");
+}
 /*
 Task 3 - Convert Strings to Numbers
 
@@ -33,8 +48,10 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+let brithDate = "1999";
+let newbrithDate = parseFloat(brithDate);
+console.log(newbrithDate);
+document.getElementById("app3").innerHTML = newbrithDate;
 /*
 Task 4 - Mood Checker
 
@@ -45,6 +62,17 @@ Do the following:
 
 */
 
+let the_mood = prompt("what is youre mood?");
+if (the_mood === "happy") {
+  document.getElementById("mood1").innerHTML = "Yay me too!";
+  console.log("Yay me too!");
+} else if (the_mood === "sad") {
+  document.getElementById("mood2").innerHTML = "Aw cheer up!";
+  console.log("Aw cheer up!");
+} else {
+  document.getElementById("mood3").innerHTML = "So moody!";
+  console.log("So moody!");
+}
 
 /*
 
@@ -55,11 +83,16 @@ Use conditionals to check if a hardcoded number is odd or even, and then console
 
 */
 
-var num; // write a number here
+var num = 24; // write a number here
 
 // write your conditions here
-
-
+if (num % 2) {
+  console.log("waa even");
+  document.getElementById("num").innerHTML = "waa even";
+} else {
+  console.log("waa odd");
+  document.getElementById("num").innerHTML = "waa odd";
+}
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 /*
@@ -102,7 +135,6 @@ It's okay for it to be slow.
 
 */
 
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
@@ -115,7 +147,6 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
-
 function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+  /*add your code here*/
 }
